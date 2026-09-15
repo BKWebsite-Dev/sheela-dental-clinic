@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sheela Dental Clinic | Coimbatore — Gentle, Trusted Dental Care</title>
+<meta name="description" content="Sheela Dental Clinic, Gandhi Park, Coimbatore — Dr. Madhusudhan M.D.S. Painless root canals, implants, crowns & family dentistry. 4.8★ from 362+ patients.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal-950:#0a2e2c;
+    --teal-900:#0d3f3c;
+    --teal-800:#124f4a;
+    --teal-700:#166861;
+    --teal-600:#1c8178;
+    --teal-500:#2a9d8f;
+    --mint-100:#eaf7f3;
+    --mint-50:#f4fbf8;
+    --coral-500:#e8785f;
+    --coral-600:#d8654f;
+    --ink-900:#152423;
+    --ink-700:#3c5250;
+    --ink-500:#63807d;
+    --paper:#fdfbf7;
+    --paper-2:#f7f3ea;
+    --line:#e2ded2;
+    --gold:#c99a4a;
+    --shadow-sm: 0 2px 10px rgba(15,45,42,0.06);
+    --shadow-md: 0 12px 32px rgba(15,45,42,0.10);
+    --shadow-lg: 0 24px 60px rgba(15,45,42,0.16);
+    color-scheme: light;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink-900);
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces',Georgia,serif;
+    font-weight:600;
+    margin:0;
+    color:var(--teal-950);
+    letter-spacing:-0.01em;
+  }
+  p{margin:0;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  button{font-family:inherit;cursor:pointer;}
+  .container{max-width:1180px;margin:0 auto;padding:0 24px;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12.5px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;
+    color:var(--teal-600);
+  }
+  .eyebrow::before{
+    content:"";width:22px;height:1.5px;background:var(--coral-500);display:inline-block;
+  }
+  section{position:relative;}
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1);}
+  .reveal.in{opacity:1;transform:translateY(0);}
+  .reveal-stagger > * {opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1);}
+  .reveal-stagger.in > *{opacity:1;transform:translateY(0);}
+  .reveal-stagger.in > *:nth-child(1){transition-delay:.02s}
+  .reveal-stagger.in > *:nth-child(2){transition-delay:.10s}
+  .reveal-stagger.in > *:nth-child(3){transition-delay:.18s}
+  .reveal-stagger.in > *:nth-child(4){transition-delay:.26s}
+  .reveal-stagger.in > *:nth-child(5){transition-delay:.34s}
+  .reveal-stagger.in > *:nth-child(6){transition-delay:.42s}
+  .reveal-stagger.in > *:nth-child(7){transition-delay:.50s}
+  .reveal-stagger.in > *:nth-child(8){transition-delay:.58s}
+
+  /* ---------- Top bar ---------- */
+  .topbar{
+    background:var(--teal-950);
+    color:#cfe7e3;
+    font-size:13px;
+  }
+  .topbar .container{
+    display:flex;justify-content:space-between;align-items:center;
+    padding-top:8px;padding-bottom:8px;flex-wrap:wrap;gap:6px;
+  }
+  .topbar-item{display:flex;align-items:center;gap:6px;opacity:.92}
+  .topbar-item svg{width:13px;height:13px;flex:none}
+  .topbar a.tel{font-weight:600;color:#fff}
+  .status-dot{width:6px;height:6px;border-radius:50%;background:#6fe0b8;display:inline-block;box-shadow:0 0 0 3px rgba(111,224,184,0.25);}
+
+  /* ---------- Header ---------- */
+  header.site{
+    position:sticky;top:0;z-index:60;
+    background:rgba(253,251,247,0.88);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-row{display:flex;align-items:center;justify-content:space-between;padding:14px 0;}
+  .brand{display:flex;align-items:center;gap:10px;}
+  .brand-mark{width:40px;height:40px;flex:none}
+  .brand-text{display:flex;flex-direction:column;line-height:1.1}
+  .brand-text .en{font-family:'Fraunces',serif;font-weight:700;font-size:19px;color:var(--teal-950)}
+  .brand-text .ta{font-size:11.5px;color:var(--ink-500)}
+  nav.links{display:flex;align-items:center;gap:30px;}
+  nav.links a{font-size:14.5px;font-weight:600;color:var(--ink-700);position:relative;padding:4px 0;}
+  nav.links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--coral-500);transition:width .25s ease;}
+  nav.links a:hover::after{width:100%}
+  .cta-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--coral-500);color:#fff;font-weight:700;font-size:14px;
+    padding:11px 20px;border-radius:100px;border:none;
+    box-shadow:0 8px 20px rgba(232,120,95,0.35);
+    transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+    white-space:nowrap;
+  }
+  .cta-btn:hover{background:var(--coral-600);transform:translateY(-2px);box-shadow:0 12px 26px rgba(232,120,95,0.42);}
+  .cta-btn svg{width:16px;height:16px}
+  .cta-ghost{
+    display:inline-flex;align-items:center;gap:8px;
+    background:transparent;color:var(--teal-800);font-weight:700;font-size:14.5px;
+    padding:11px 18px;border-radius:100px;border:1.5px solid var(--teal-800);
+    transition:all .2s ease;
+  }
+  .cta-ghost:hover{background:var(--teal-950);color:#fff;border-color:var(--teal-950);}
+  .header-actions{display:flex;align-items:center;gap:14px}
+  .menu-toggle{display:none;background:none;border:none;padding:6px;}
+  .menu-toggle span{display:block;width:24px;height:2px;background:var(--teal-950);margin:5px 0;transition:.3s;}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:
+      radial-gradient(ellipse 900px 500px at 85% -10%, rgba(42,157,143,0.14), transparent 60%),
+      linear-gradient(180deg,var(--mint-50) 0%, var(--paper) 78%);
+    padding:76px 0 40px;
+    overflow:hidden;
+  }
+  .hero-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:48px;align-items:center;}
+  .hero-badge{
+    display:inline-flex;align-items:center;gap:10px;
+    background:#fff;border:1px solid var(--line);border-radius:100px;
+    padding:7px 16px 7px 7px;box-shadow:var(--shadow-sm);font-size:13.5px;font-weight:600;color:var(--ink-700);
+    margin-bottom:22px;
+  }
+  .hero-badge .stars{color:var(--gold);display:flex;gap:1px;background:var(--mint-100);padding:5px 9px;border-radius:100px;}
+  .hero-badge .stars svg{width:13px;height:13px}
+  .hero h1{
+    font-size:clamp(34px,4.6vw,54px);
+    line-height:1.08;
+    margin-bottom:20px;
+  }
+  .hero h1 em{
+    font-style:normal;color:var(--teal-600);
+    background:linear-gradient(180deg,transparent 62%, rgba(42,157,143,0.22) 62%);
+  }
+  .hero p.lead{
+    font-size:17.5px;line-height:1.65;color:var(--ink-700);max-width:520px;margin-bottom:30px;
+  }
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:36px;}
+  .hero-stats{display:flex;gap:0;border-top:1px solid var(--line);padding-top:22px;flex-wrap:wrap;}
+  .hero-stat{padding-right:30px;margin-right:30px;border-right:1px solid var(--line);}
+  .hero-stat:last-child{border-right:none;margin-right:0;}
+  .hero-stat .num{font-family:'Fraunces',serif;font-size:26px;font-weight:700;color:var(--teal-950);display:block;}
+  .hero-stat .lbl{font-size:12.5px;color:var(--ink-500);font-weight:600;}
+
+  .hero-art{position:relative;height:480px;}
+  .hero-art .card-float{
+    position:absolute;background:#fff;border-radius:18px;box-shadow:var(--shadow-lg);
+    padding:14px 16px;display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;color:var(--teal-900);
+    animation:float 6s ease-in-out infinite;
+  }
+  .hero-art .card-1{top:6%;left:0%;animation-delay:0s;}
+  .hero-art .card-2{bottom:10%;right:2%;animation-delay:1.2s;}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+  .hero-art svg.blob{position:absolute;inset:0;width:100%;height:100%;}
+  @media (prefers-reduced-motion: reduce){
+    .hero-art .card-float{animation:none}
+    .reveal, .reveal-stagger > *{transition:none;opacity:1;transform:none;}
+  }
+
+  /* ---------- Trust strip ---------- */
+  .trust-strip{
+    background:var(--teal-950);
+    padding:26px 0;
+  }
+  .trust-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:18px;}
+  .trust-item{display:flex;align-items:center;gap:10px;color:#dcefec;font-size:13.5px;font-weight:600;}
+  .trust-item svg{width:20px;height:20px;color:#6fe0b8;flex:none}
+
+  /* ---------- Section shell ---------- */
+  .section{padding:96px 0;}
+  .section-head{max-width:640px;margin-bottom:52px;}
+  .section-head h2{font-size:clamp(28px,3.4vw,40px);line-height:1.15;margin:12px 0 14px;}
+  .section-head p{color:var(--ink-700);font-size:16.5px;line-height:1.6;}
+  .section-alt{background:var(--paper-2);}
+
+  /* ---------- About ---------- */
+  .about-grid{display:grid;grid-template-columns:0.95fr 1.05fr;gap:64px;align-items:center;}
+  .about-visual{position:relative;}
+  .about-visual .frame{
+    border-radius:24px;overflow:hidden;box-shadow:var(--shadow-md);
+    background:linear-gradient(160deg,var(--teal-700),var(--teal-950));
+    aspect-ratio:4/5;position:relative;
+  }
+  .about-copy p{color:var(--ink-700);line-height:1.75;font-size:16px;margin-bottom:16px;}
+  .about-list{list-style:none;margin:26px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .about-list li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;font-weight:600;color:var(--teal-900);}
+  .about-list svg{width:18px;height:18px;color:var(--coral-500);flex:none;margin-top:1px;}
+
+  /* ---------- Doctor ---------- */
+  .doctor-card{
+    display:grid;grid-template-columns:280px 1fr;gap:44px;
+    background:#fff;border:1px solid var(--line);border-radius:26px;padding:44px;box-shadow:var(--shadow-md);
+    align-items:center;
+  }
+  .doctor-portrait{
+    aspect-ratio:1/1;border-radius:20px;
+    background:radial-gradient(circle at 30% 20%, var(--teal-500), var(--teal-900));
+    display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;
+  }
+  .doctor-portrait svg{width:62%;height:62%;color:#eafaf6;}
+  .doctor-name{font-size:24px;margin-bottom:4px;}
+  .doctor-role{color:var(--coral-500);font-weight:700;font-size:14px;margin-bottom:18px;display:block;}
+  .doctor-card p{color:var(--ink-700);line-height:1.7;font-size:15.5px;margin-bottom:14px;}
+  .doctor-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px;}
+  .doctor-tags span{background:var(--mint-100);color:var(--teal-700);font-size:12.5px;font-weight:700;padding:6px 12px;border-radius:100px;}
+
+  /* ---------- Services ---------- */
+  .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+  .service-card{
+    background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px 26px;
+    transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+  }
+  .service-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);border-color:transparent;}
+  .service-icon{
+    width:52px;height:52px;border-radius:14px;background:var(--mint-100);color:var(--teal-600);
+    display:flex;align-items:center;justify-content:center;margin-bottom:18px;
+  }
+  .service-icon svg{width:26px;height:26px;}
+  .service-card h3{font-size:18px;margin-bottom:8px;}
+  .service-card p{font-size:14px;color:var(--ink-500);line-height:1.55;}
+
+  /* ---------- Why grid ---------- */
+  .why-wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+  .why-item{display:flex;gap:18px;padding:22px 0;border-bottom:1px solid var(--line);}
+  .why-item:last-child{border-bottom:none;}
+  .why-num{font-family:'Fraunces',serif;font-size:22px;color:var(--coral-500);font-weight:700;flex:none;width:36px;}
+  .why-item h4{font-size:17px;margin-bottom:6px;}
+  .why-item p{font-size:14.5px;color:var(--ink-500);line-height:1.6;}
+  .why-visual{
+    border-radius:24px;background:linear-gradient(160deg,var(--mint-100),#fff);
+    border:1px solid var(--line);padding:40px;position:relative;overflow:hidden;min-height:420px;
+    display:flex;align-items:center;justify-content:center;
+  }
+
+  /* ---------- Testimonials ---------- */
+  .rating-summary{display:flex;align-items:center;gap:24px;margin-bottom:40px;flex-wrap:wrap;}
+  .rating-big{font-family:'Fraunces',serif;font-size:56px;font-weight:700;color:var(--teal-950);line-height:1;}
+  .rating-stars{color:var(--gold);display:flex;gap:2px;margin:6px 0;}
+  .rating-stars svg{width:18px;height:18px;}
+  .rating-sub{color:var(--ink-500);font-size:14px;font-weight:600;}
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .testi-card{
+    background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px;
+    box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:16px;
+  }
+  .testi-stars{color:var(--gold);display:flex;gap:2px;}
+  .testi-stars svg{width:14px;height:14px;}
+  .testi-card p.quote{font-size:15px;line-height:1.65;color:var(--ink-700);flex:1;}
+  .testi-foot{display:flex;align-items:center;gap:12px;}
+  .testi-avatar{
+    width:38px;height:38px;border-radius:50%;background:var(--teal-700);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;flex:none;
+  }
+  .testi-name{font-weight:700;font-size:14px;color:var(--teal-950);}
+  .testi-meta{font-size:12px;color:var(--ink-500);}
+  .testi-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:36px;}
+  .testi-tags span{
+    font-size:12.5px;font-weight:600;color:var(--teal-700);background:var(--mint-100);
+    padding:7px 14px;border-radius:100px;
+  }
+
+  /* ---------- Gallery (illustrative) ---------- */
+  .gallery-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:14px;
+  }
+  .gallery-grid .g-item{
+    border-radius:16px;overflow:hidden;position:relative;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .g-item.tall{grid-row:span 2;}
+  .g-item svg{width:38%;height:38%;opacity:.9}
+  .g-item .g-label{position:absolute;bottom:12px;left:14px;color:#fff;font-size:12.5px;font-weight:700;letter-spacing:.02em;}
+  .g-item::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%, rgba(10,46,44,0.55) 100%);}
+
+  /* ---------- Contact / Location ---------- */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:26px;overflow:hidden;box-shadow:var(--shadow-lg);}
+  .contact-info{background:var(--teal-950);color:#eafaf6;padding:56px 48px;}
+  .contact-info h2{color:#fff;font-size:30px;margin-bottom:14px;}
+  .contact-info > p{color:#a9d3cd;font-size:15px;line-height:1.65;margin-bottom:34px;}
+  .contact-row{display:flex;gap:16px;margin-bottom:26px;align-items:flex-start;}
+  .contact-row svg{width:20px;height:20px;color:var(--coral-500);flex:none;margin-top:2px;}
+  .contact-row h4{color:#fff;font-size:14.5px;margin-bottom:4px;font-family:'Inter';font-weight:700;}
+  .contact-row p, .contact-row a{color:#c3e2dd;font-size:14.5px;line-height:1.6;}
+  .hours-table{width:100%;border-collapse:collapse;margin-top:6px;}
+  .hours-table td{padding:4px 0;font-size:14px;color:#c3e2dd;}
+  .hours-table td:last-child{text-align:right;font-weight:700;color:#fff;}
+  .map-embed{min-height:420px;background:var(--mint-100);}
+  .map-embed iframe{width:100%;height:100%;min-height:420px;border:0;filter:saturate(0.85);}
+
+  /* ---------- CTA banner ---------- */
+  .cta-band{
+    background:linear-gradient(120deg,var(--teal-800),var(--teal-950));
+    border-radius:28px;padding:64px 60px;text-align:center;position:relative;overflow:hidden;
+  }
+  .cta-band h2{color:#fff;font-size:clamp(26px,3.2vw,38px);margin-bottom:14px;}
+  .cta-band p{color:#b9dcd6;font-size:16px;margin-bottom:30px;}
+  .cta-band .row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+  .cta-band .cta-ghost{border-color:rgba(255,255,255,0.5);color:#fff;}
+  .cta-band .cta-ghost:hover{background:#fff;color:var(--teal-950);border-color:#fff;}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--teal-950);color:#9cc4bf;padding:64px 0 26px;}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.1fr;gap:40px;margin-bottom:50px;}
+  .footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:16px;}
+  .footer-brand .en{color:#fff;font-family:'Fraunces',serif;font-weight:700;font-size:19px;}
+  footer p.tag{font-size:14px;line-height:1.6;color:#8fb8b2;max-width:280px;}
+  footer h5{color:#fff;font-size:13.5px;letter-spacing:.05em;text-transform:uppercase;margin-bottom:18px;}
+  footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px;}
+  footer ul a{font-size:14px;color:#a9cec8;transition:color .2s;}
+  footer ul a:hover{color:#fff;}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;color:#7fa9a3;}
+  .back-to-top{
+    position:fixed;right:24px;bottom:24px;width:46px;height:46px;border-radius:50%;
+    background:var(--coral-500);color:#fff;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 10px 24px rgba(232,120,95,0.4);opacity:0;pointer-events:none;transition:opacity .3s, transform .2s;
+    border:none;z-index:50;
+  }
+  .back-to-top.show{opacity:1;pointer-events:auto;}
+  .back-to-top:hover{transform:translateY(-3px);}
+  .back-to-top svg{width:18px;height:18px;}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:1020px){
+    .hero-grid{grid-template-columns:1fr;}
+    .hero-art{height:340px;order:-1;}
+    .about-grid{grid-template-columns:1fr;}
+    .about-visual{max-width:340px;margin:0 auto;}
+    .services-grid{grid-template-columns:repeat(2,1fr);}
+    .why-wrap{grid-template-columns:1fr;gap:30px;}
+    .why-visual{min-height:280px;order:-1;}
+    .testi-grid{grid-template-columns:1fr 1fr;}
+    .contact-grid{grid-template-columns:1fr;}
+    .doctor-card{grid-template-columns:1fr;text-align:center;padding:36px;}
+    .doctor-portrait{max-width:220px;margin:0 auto;}
+    .doctor-tags{justify-content:center;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+    .gallery-grid{grid-template-columns:repeat(2,1fr);}
+  }
+  @media (max-width:760px){
+    nav.links{display:none;}
+    .menu-toggle{display:block;}
+    .cta-ghost{display:none;}
+    .hero-stats{gap:0;}
+    .hero-stat{padding-right:18px;margin-right:18px;}
+    .services-grid{grid-template-columns:1fr 1fr;}
+    .testi-grid{grid-template-columns:1fr;}
+    .about-list{grid-template-columns:1fr;}
+    .topbar .container{justify-content:center;text-align:center;}
+    .section{padding:64px 0;}
+    .cta-band{padding:44px 26px;}
+    .footer-grid{grid-template-columns:1fr;gap:28px;}
+  }
+
+  /* Mobile nav drawer */
+  .mobile-nav{
+    position:fixed;inset:0 0 0 auto;width:78%;max-width:320px;background:#fff;z-index:100;
+    transform:translateX(100%);transition:transform .35s cubic-bezier(.2,.8,.2,1);
+    padding:28px 26px;box-shadow:-10px 0 40px rgba(0,0,0,0.15);
+    display:flex;flex-direction:column;gap:6px;
+  }
+  .mobile-nav.open{transform:translateX(0);}
+  .mobile-nav a{padding:14px 4px;font-weight:700;font-size:16px;border-bottom:1px solid var(--line);color:var(--teal-950);}
+  .scrim{position:fixed;inset:0;background:rgba(10,46,44,0.4);z-index:90;opacity:0;pointer-events:none;transition:opacity .3s;}
+  .scrim.show{opacity:1;pointer-events:auto;}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-item">
+      <span class="status-dot"></span>
+      <span id="openStatus">Open now · Closes 8:45 PM</span>
+    </div>
+    <div class="topbar-item">1, Sullivan Street, Gandhi Park, Town Hall, Coimbatore 641001</div>
+    <div class="topbar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <a class="tel" href="tel:+919894150491">+91 98941 50491</a>
+    </div>
+  </div>
+</div>
+
+<header class="site">
+  <div class="container nav-row">
+    <a href="#top" class="brand">
+      <svg class="brand-mark" viewBox="0 0 48 48" fill="none">
+        <circle cx="24" cy="24" r="23" fill="#0d3f3c"/>
+        <path d="M24 14c-3.2 0-4.6 1.6-6.4 1.6-1.6 0-2.8-1.1-4.3-1.1-2.9 0-5.3 2.9-5.3 7.6 0 5.9 3.9 13.4 6.6 13.4 1.7 0 2.1-1.2 3.4-1.2 1.4 0 1.6 1.2 3.4 1.2 1.7 0 2-1.2 3.4-1.2 1.3 0 1.8 1.2 3.4 1.2 2.7 0 6.6-7.5 6.6-13.4 0-4.7-2.4-7.6-5.3-7.6-1.5 0-2.7 1.1-4.3 1.1C28.6 15.6 27.2 14 24 14z" fill="#eafaf6"/>
+      </svg>
+      <span class="brand-text">
+        <span class="en">Sheela Dental Clinic</span>
+        <span class="ta">ஷீலா டெண்ட்டா கிளினிக்</span>
+      </span>
+    </a>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#doctor">Our Doctor</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Visit Us</a>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:+919894150491" class="cta-ghost">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call Clinic
+      </a>
+      <a href="#contact" class="cta-btn">
+        Book Appointment
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="scrim" id="scrim"></div>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#doctor">Our Doctor</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#contact">Visit Us</a>
+  <a href="tel:+919894150491" style="border:none;color:var(--coral-500);">Call +91 98941 50491</a>
+</nav>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <div class="hero-badge">
+          <span class="stars">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg>
+          </span>
+          4.8 rating from 362 Google reviews
+        </div>
+        <h1>Gentle dental care, trusted by <em>Coimbatore</em> for generations.</h1>
+        <p class="lead">At Sheela Dental Clinic in Gandhi Park, Dr. Madhusudhan and our team pair careful, painless treatment with modern equipment — so every visit feels calm, not clinical.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="cta-btn">
+            Book Your Visit
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="tel:+919894150491" class="cta-ghost">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            98941 50491
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><span class="num" data-count="362">0</span><span class="lbl">Google Reviews</span></div>
+          <div class="hero-stat"><span class="num" data-count="4.8" data-decimal="1">0</span><span class="lbl">Average Rating</span></div>
+          <div class="hero-stat"><span class="num" data-count="20" data-suffix="+">0</span><span class="lbl">Years Serving Coimbatore</span></div>
+        </div>
+      </div>
+      <div class="hero-art reveal">
+        <svg class="blob" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#dff2ee" d="M420,300Q430,400,330,430Q230,460,160,390Q90,320,110,220Q130,120,240,100Q350,80,400,170Q450,260,420,300Z"/>
+        </svg>
+        <svg style="position:absolute;left:50%;top:50%;width:56%;transform:translate(-50%,-52%);" viewBox="0 0 100 120" fill="none">
+          <path d="M50 8c-11 0-16 6-24 6-6 0-11-4-17-4C-2 10-2 32 2 50c4 19 16 45 26 45 7 0 8-5 13-5s6 5 13 5 6-5 13-5 6 5 13 5c10 0 22-26 26-45 4-18 4-40-9-40-6 0-11 4-17 4-8 0-13-6-24-6z" fill="#0d3f3c"/>
+          <path d="M50 20c-4 22-3 44 0 66M38 22c-3 20 2 40 6 58M62 22c3 20-2 40-6 58" stroke="#eafaf6" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <div class="card-float card-1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#e8785f" stroke-width="2.4" width="22" height="22"><path d="M12 21c-4-4-9-8-9-13a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5-5 9-9 13z"/></svg>
+          Pain-free root canals
+        </div>
+        <div class="card-float card-2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1c8178" stroke-width="2.4" width="22" height="22"><path d="M20 6L9 17l-5-5"/></svg>
+          Same-day appointments
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="trust-strip">
+    <div class="container trust-row">
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11z"/></svg> Hygiene-first, sterilised equipment</div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> M.D.S. qualified dentist</div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg> LGBTQ+ friendly practice</div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"/></svg> Open till 8:45 PM, 6 days a week</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual reveal">
+        <div class="frame">
+          <svg width="100%" height="100%" viewBox="0 0 400 500" style="position:absolute;inset:0;">
+            <defs>
+              <linearGradient id="fadeTeal" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#166861"/>
+                <stop offset="1" stop-color="#0a2e2c"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="500" fill="url(#fadeTeal)"/>
+            <g opacity="0.5" stroke="#eafaf6" stroke-width="2" fill="none">
+              <circle cx="200" cy="180" r="70"/>
+              <circle cx="200" cy="180" r="100"/>
+            </g>
+            <path transform="translate(140,130) scale(2.4)" d="M25 4c-5.5 0-8 3-12 3-3 0-5.5-2-8.5-2C-.5 5-.5 16 1.5 25c2 9.5 8 22.5 13 22.5 3.5 0 4-2.5 6.5-2.5s3 2.5 6.5 2.5 3-2.5 6.5-2.5 3 2.5 6.5 2.5c5 0 11-13 13-22.5 2-9 2-20-4.5-20-3 0-5.5 2-8.5 2-4 0-6.5-3-12-3z" fill="#eafaf6"/>
+            <text x="200" y="410" text-anchor="middle" fill="#cfe7e3" font-family="Fraunces, serif" font-size="17" font-weight="600">Est. reputation across generations</text>
+            <text x="200" y="436" text-anchor="middle" fill="#8fb8b2" font-family="Inter, sans-serif" font-size="12.5">Gandhi Park, Town Hall — Coimbatore</text>
+          </svg>
+        </div>
+      </div>
+      <div class="about-copy reveal">
+        <span class="eyebrow">About the clinic</span>
+        <h2>A neighbourhood clinic that has earned Coimbatore's trust, one careful visit at a time.</h2>
+        <p>Tucked into Sullivan Street in Gandhi Park, right by Town Hall, Sheela Dental Clinic has been a familiar name to families across this part of Coimbatore. What keeps patients coming back — and sending their relatives — isn't a fancy interior; it's the way Dr. Madhusudhan and the team slow down, explain every step, and check in before, during and after a procedure.</p>
+        <p>That approach shows up in the numbers: a 4.8-star average across 362 Google reviews, with patients repeatedly describing treatments as "gentle," "painless" and "kindly explained." Whether it's a routine cleaning, a same-day emergency, or a full smile restoration, the goal here is simple — dentistry without dread.</p>
+        <ul class="about-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Transparent, upfront pricing</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Modern, sterilised equipment</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Calm, clean, welcoming space</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg> Inclusive care for every patient</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCTOR -->
+  <section class="section section-alt" id="doctor">
+    <div class="container">
+      <div class="doctor-card reveal">
+        <div class="doctor-portrait">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+        </div>
+        <div>
+          <span class="eyebrow">Meet your dentist</span>
+          <h3 class="doctor-name" style="margin-top:10px;">Dr. Madhusudhan, M.D.S.</h3>
+          <span class="doctor-role">Founder & Chief Dental Surgeon</span>
+          <p>Dr. Madhusudhan built Sheela Dental Clinic around a simple idea: patients relax when they understand exactly what's happening in their own mouth. He and his clinical team — hygienists and dental assistants trained alongside him — handle everything from routine check-ups to complex implant and root-canal cases, with an emphasis on minimally invasive, low-pain technique.</p>
+          <p>Patients frequently mention his habit of pausing mid-procedure to ask "are you comfortable?" — a small habit that shows up again and again in the clinic's reviews.</p>
+          <div class="doctor-tags">
+            <span>M.D.S. — Master of Dental Surgery</span>
+            <span>Root Canal Specialist</span>
+            <span>Implantology</span>
+            <span>Cosmetic & Restorative Dentistry</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">What we treat</span>
+        <h2>Complete dental care, under one roof.</h2>
+        <p>From a routine scale-and-clean to full-mouth rehabilitation, every treatment plan is explained in plain language before we begin.</p>
+      </div>
+      <div class="services-grid reveal-stagger">
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-4-9-8-9-13a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5-5 9-9 13z"/></svg></div>
+          <h3>General & Preventive</h3>
+          <p>Check-ups, cleaning, scaling and cavity treatment to keep small problems from becoming big ones.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-1.5z"/></svg></div>
+          <h3>Painless Root Canal</h3>
+          <p>Modern anaesthesia and gentle technique — our most-reviewed treatment, patients repeatedly call it "no pain."</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Crowns & Bridges</h3>
+          <p>Durable zirconia and ceramic crowns, custom-fitted for a natural bite and appearance.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M6 8l6-5 6 5M6 16l6 5 6-5"/></svg></div>
+          <h3>Dental Implants</h3>
+          <p>Long-term tooth replacement for missing teeth, restoring both function and confidence.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M4 6h16M4 18h7"/></svg></div>
+          <h3>Wisdom Tooth Removal</h3>
+          <p>Safe, surgical extractions for impacted or troublesome wisdom teeth — a top-reviewed procedure here.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 2v10l7 4"/></svg></div>
+          <h3>Cosmetic & Smile Design</h3>
+          <p>Veneers, alignment and shaping consultations to help you smile the way you want to.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg></div>
+          <h3>Teeth Whitening</h3>
+          <p>In-clinic whitening treatments for a brighter smile, done safely under professional supervision.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="3"/><path d="M6 21c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg></div>
+          <h3>Family & Child Dentistry</h3>
+          <p>A patient, friendly approach for younger patients visiting the dentist for the first time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Why patients stay</span>
+        <h2>The details behind a 4.8-star reputation.</h2>
+      </div>
+      <div class="why-wrap">
+        <div class="why-list reveal-stagger">
+          <div class="why-item">
+            <span class="why-num">01</span>
+            <div><h4>Comfort-first technique</h4><p>Local anaesthesia, unhurried pacing, and constant check-ins — reviews specifically call out treatment "with no pain."</p></div>
+          </div>
+          <div class="why-item">
+            <span class="why-num">02</span>
+            <div><h4>Clear explanations, no jargon</h4><p>Every procedure is talked through in advance, in Tamil or English, so there are no surprises mid-treatment.</p></div>
+          </div>
+          <div class="why-item">
+            <span class="why-num">03</span>
+            <div><h4>Fair, transparent costs</h4><p>Patients frequently mention "reasonable" pricing with no hidden charges added after treatment begins.</p></div>
+          </div>
+          <div class="why-item">
+            <span class="why-num">04</span>
+            <div><h4>Central, easy-to-reach location</h4><p>Right in Gandhi Park near Town Hall — close to public transport and parking in the heart of Coimbatore.</p></div>
+          </div>
+          <div class="why-item">
+            <span class="why-num">05</span>
+            <div><h4>An inclusive, welcoming space</h4><p>Recognised as an LGBTQ+ friendly practice, with the same respectful care extended to every patient.</p></div>
+          </div>
+        </div>
+        <div class="why-visual reveal">
+          <svg viewBox="0 0 320 320" width="80%">
+            <circle cx="160" cy="160" r="150" fill="#eaf7f3"/>
+            <circle cx="160" cy="160" r="110" fill="none" stroke="#2a9d8f" stroke-width="2" stroke-dasharray="6 6"/>
+            <text x="160" y="140" text-anchor="middle" font-family="Fraunces, serif" font-size="52" font-weight="700" fill="#0d3f3c">4.8</text>
+            <g transform="translate(105,160)" fill="#c99a4a">
+              <path transform="translate(0,0) scale(0.9)" d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L0.3 7.2l6.1-.6z"/>
+              <path transform="translate(22,0) scale(0.9)" d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L0.3 7.2l6.1-.6z"/>
+              <path transform="translate(44,0) scale(0.9)" d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L0.3 7.2l6.1-.6z"/>
+              <path transform="translate(66,0) scale(0.9)" d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L0.3 7.2l6.1-.6z"/>
+              <path transform="translate(88,0) scale(0.9)" d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L0.3 7.2l6.1-.6z"/>
+            </g>
+            <text x="160" y="200" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#3c5250">362 Google Reviews</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Patient reviews</span>
+        <h2>What Coimbatore is saying.</h2>
+      </div>
+      <div class="rating-summary reveal">
+        <div>
+          <span class="rating-big">4.8</span>
+        </div>
+        <div>
+          <div class="rating-stars">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg>
+          </div>
+          <span class="rating-sub">Based on 362 verified Google reviews</span>
+        </div>
+      </div>
+      <div class="testi-grid reveal-stagger">
+        <div class="testi-card">
+          <div class="testi-stars">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg>
+          </div>
+          <p class="quote">"It was very gentle — I was impressed with the root canal, no pain, and the fitting of the crown was perfect. They accommodated me while I was travelling and were very professional."</p>
+          <div class="testi-foot">
+            <div class="testi-avatar">A</div>
+            <div><div class="testi-name">Aimee B.</div><div class="testi-meta">Google Review · Root Canal & Crown</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg>
+          </div>
+          <p class="quote">"The doctor treated me kindly and often asked if I felt comfortable, which showed a genuinely caring approach. The costs were very reasonable too — I've already recommended this clinic to others."</p>
+          <div class="testi-foot">
+            <div class="testi-avatar">S</div>
+            <div><div class="testi-name">Senthil K.</div><div class="testi-meta">Google Review · General Treatment</div></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg><svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.1-5.4 3.1 1.3-6L1.3 7.2l6.1-.6z"/></svg>
+          </div>
+          <p class="quote">"From the moment I walked in, I was greeted with a warm smile and minimal wait time — the office is spotless, modern, and relaxing, with a team that clearly explains every step."</p>
+          <div class="testi-foot">
+            <div class="testi-avatar">M</div>
+            <div><div class="testi-name">Madhan R.</div><div class="testi-meta">Google Review · Full Consultation</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-tags reveal">
+        <span>#PainlessTreatment</span>
+        <span>#KindDentist</span>
+        <span>#WisdomToothRemoval</span>
+        <span>#ClearProcedureExplanation</span>
+        <span>#CleanClinic</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Inside the clinic</span>
+        <h2>A calm space, built for comfort.</h2>
+      </div>
+      <div class="gallery-grid reveal-stagger">
+        <div class="g-item tall" style="background:linear-gradient(160deg,#166861,#0a2e2c);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#eafaf6" stroke-width="1.6"><path d="M12 21c-4-4-9-8-9-13a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5-5 9-9 13z"/></svg>
+          <span class="g-label">Treatment Room</span>
+        </div>
+        <div class="g-item" style="background:linear-gradient(160deg,#2a9d8f,#124f4a);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#eafaf6" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 12l2 2 4-4"/></svg>
+          <span class="g-label">Sterilised Equipment</span>
+        </div>
+        <div class="g-item" style="background:linear-gradient(160deg,#c99a4a,#8a6a2e);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+          <span class="g-label">Reception & Waiting Area</span>
+        </div>
+        <div class="g-item tall" style="background:linear-gradient(160deg,#124f4a,#0a2e2c);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#eafaf6" stroke-width="1.6"><path d="M12 2l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-1.5z"/></svg>
+          <span class="g-label">Diagnostic Suite</span>
+        </div>
+        <div class="g-item" style="background:linear-gradient(160deg,#e8785f,#b8543f);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span class="g-label">Patient-First Care</span>
+        </div>
+        <div class="g-item" style="background:linear-gradient(160deg,#1c8178,#0d3f3c);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#eafaf6" stroke-width="1.6"><path d="M12 3v18M6 8l6-5 6 5M6 16l6 5 6-5"/></svg>
+          <span class="g-label">Implant Studio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>Toothache, or just overdue for a check-up?</h2>
+        <p>Call ahead or walk in — Sheela Dental Clinic is open six days a week in the heart of Gandhi Park.</p>
+        <div class="row">
+          <a href="tel:+919894150491" class="cta-btn">Call +91 98941 50491</a>
+          <a href="#contact" class="cta-ghost">Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact" style="padding-top:0;">
+    <div class="container">
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <span class="eyebrow" style="color:#6fe0b8;">Visit us</span>
+          <h2>Find & reach the clinic</h2>
+          <p>Located on Sullivan Street in Gandhi Park, a short walk from Town Hall — easy to find, easy to reach.</p>
+
+          <div class="contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><h4>Address</h4><p>1, Sullivan Street, Gandhi Park,<br>Town Hall, Coimbatore, Tamil Nadu 641001</p></div>
+          </div>
+          <div class="contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div><h4>Phone</h4><p><a href="tel:+919894150491">+91 98941 50491</a> (mobile)<br><a href="tel:04224954491">0422 495 4491</a> (clinic landline)</p></div>
+          </div>
+          <div class="contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z"/></svg>
+            <div>
+              <h4>Working Hours</h4>
+              <table class="hours-table">
+                <tr><td>Monday – Saturday</td><td>9:30 AM – 8:45 PM</td></tr>
+                <tr><td>Sunday</td><td>By appointment</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps?q=Sheela+Dental+Clinic,+Sullivan+Street,+Gandhi+Park,+Town+Hall,+Coimbatore,+Tamil+Nadu+641001&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Sheela Dental Clinic location map">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg class="brand-mark" width="34" height="34" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="23" fill="#124f4a"/>
+            <path d="M24 14c-3.2 0-4.6 1.6-6.4 1.6-1.6 0-2.8-1.1-4.3-1.1-2.9 0-5.3 2.9-5.3 7.6 0 5.9 3.9 13.4 6.6 13.4 1.7 0 2.1-1.2 3.4-1.2 1.4 0 1.6 1.2 3.4 1.2 1.7 0 2-1.2 3.4-1.2 1.3 0 1.8 1.2 3.4 1.2 2.7 0 6.6-7.5 6.6-13.4 0-4.7-2.4-7.6-5.3-7.6-1.5 0-2.7 1.1-4.3 1.1C28.6 15.6 27.2 14 24 14z" fill="#eafaf6"/>
+          </svg>
+          <span class="en">Sheela Dental Clinic</span>
+        </div>
+        <p class="tag">Gentle, transparent dental care in Gandhi Park, Coimbatore — trusted by patients for over two decades.</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#doctor">Our Doctor</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Root Canal Treatment</a></li>
+          <li><a href="#services">Dental Implants</a></li>
+          <li><a href="#services">Crowns & Bridges</a></li>
+          <li><a href="#services">Cosmetic Dentistry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li>1, Sullivan Street, Gandhi Park,<br>Town Hall, Coimbatore 641001</li>
+          <li><a href="tel:+919894150491">+91 98941 50491</a></li>
+          <li><a href="tel:04224954491">0422 495 4491</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Sheela Dental Clinic. All rights reserved.</span>
+      <span>Designed with care for a healthier Coimbatore.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+  // Mobile nav
+  const menuToggle = document.getElementById('menuToggle');
+  const mobileNav = document.getElementById('mobileNav');
+  const scrim = document.getElementById('scrim');
+  function closeNav(){ mobileNav.classList.remove('open'); scrim.classList.remove('show'); }
+  menuToggle.addEventListener('click', () => {
+    mobileNav.classList.toggle('open');
+    scrim.classList.toggle('show');
+  });
+  scrim.addEventListener('click', closeNav);
+  mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeNav));
+
+  // Scroll reveal
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
+
+  // Counters
+  const counters = document.querySelectorAll('[data-count]');
+  const counterIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = parseFloat(el.dataset.count);
+      const decimals = parseInt(el.dataset.decimal || '0', 10);
+      const suffix = el.dataset.suffix || '';
+      const duration = 1400;
+      const start = performance.now();
+      function tick(now){
+        const p = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        const val = target * eased;
+        el.textContent = (decimals ? val.toFixed(decimals) : Math.round(val)) + suffix;
+        if (p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+      counterIO.unobserve(el);
+    });
+  }, { threshold: 0.6 });
+  counters.forEach(c => counterIO.observe(c));
+
+  // Back to top
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('show', window.scrollY > 500);
+  });
+  backToTop.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+
+  // Open/closed status based on real hours (Mon-Sat 9:30-20:45, IST business context but uses local browser clock)
+  (function(){
+    const el = document.getElementById('openStatus');
+    const now = new Date();
+    const day = now.getDay(); // 0 Sun - 6 Sat
+    const mins = now.getHours()*60 + now.getMinutes();
+    const openMins = 9*60+30, closeMins = 20*60+45;
+    if (day === 0) {
+      el.textContent = 'Sunday · By appointment only';
+    } else if (mins >= openMins && mins < closeMins) {
+      el.textContent = 'Open now · Closes 8:45 PM';
+    } else {
+      el.textContent = 'Closed now · Opens 9:30 AM';
+    }
+  })();
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
